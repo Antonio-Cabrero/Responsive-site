@@ -55,7 +55,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  width: 95%;
 }
 
 .main-nav {
@@ -86,12 +85,10 @@ footer {
   /* ---- About Section  ---- */
 
 #About {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
+  display: block;
+  margin: 0 auto;
   background-color: #870032;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
   #About h3,li {
@@ -108,23 +105,28 @@ footer {
     }
 
     .about-wrap {
-    width: 90%;
+    width: 85%;
     margin: 20px auto;
     }
       .about-wrap p {
+      text-align: center;
+       line-height: 1.8;
+       font-size: 1.15em;
        color: #fff;
       }
 
 .profile-picture {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   margin-top: 2.8em;
-  height: 200px;
-  width: 200px;
-  background-image: url('profile.jpg');
-  background-size: cover;
-  background-position: top;
-  border-radius: 15px;
-  box-shadow: 0 5px 10px 1px #450019;
 }
+  .profile-picture img {
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px 1px #450019;
+  }
+
   .profile-picture:hover {
     opacity: 0.9;
   }
@@ -140,7 +142,8 @@ footer {
 
 }
   #Projects h2 {
-    font-size: 2em;
+    font-size: 1.8em;
+    font-weight: 800;
     color: #111;
     text-align: center;
     padding: 50px 0;
@@ -148,12 +151,12 @@ footer {
   }
 
   .card {
-    background-color: #eee;
+    background-color: #fff;
     width: 80%;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 5px 10px 1px #ccc;
+    box-shadow: 0 5px 7px 1px #ccc;
   }
     .card h3 {
       background-color: #870032;
@@ -175,39 +178,83 @@ footer {
     }
 
 .project {
-  width: 50%;
-  background-color: #bbb;
-  padding: 20px;
-  height: 15vh;
+  width: 90%;
+  background-color: #eee;
   margin: 15px auto;
-  border-radius: 5px;
 }
+  .project img{
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  }
 
   /* ---- Contact Section  ---- */
 
 #Contact {
 display: flex;
-justify-content: space-space-between;
+justify-content: space-between;
 align-items: center;
 flex-direction: column;
-height: 100vh;
 background-color: #870032;
 }
-    #Contact h2 {    
-      font-size: 2em;
+    #Contact h2 {
+      font-size: 1.6em;
       display: inline-block;
       margin-top: 50px;
       margin-bottom: 20px;
     }
 
+    #Contact p {
+      text-align: center;
+      color: #fff;
+    }
 
+    #Contact a {
+      font-weight: bold;
+    }
+
+  .contact-wrap {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+}
+  .main-footer p{
+    font-weight: bold;
+    display: block;
+  }
+
+.footer-nav {
+  display: none;
+}
   /* =================================
     Media Queries
   ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+.header-wrap {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.back-to-top a {
+  display: none;
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #111;
+  font-size: .8em;
+}
 }
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 }
