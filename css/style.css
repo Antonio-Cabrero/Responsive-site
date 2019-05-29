@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap');
 
   /* =================================
     Base Element Styles
@@ -21,6 +21,7 @@ header {
 }
 
 h2 {
+  font-weight: bold;
   letter-spacing: 4px;
 }
 
@@ -134,10 +135,7 @@ footer {
   /* ---- Proejects Section  ---- */
 
 #Projects{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: block;
   margin: 0 auto;
 
 }
@@ -152,7 +150,8 @@ footer {
 
   .card {
     background-color: #fff;
-    width: 80%;
+    width: 90%;
+    margin: 0 auto;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 5px;
@@ -237,24 +236,62 @@ background-color: #870032;
 @media (min-width: 768px) {
 .header-wrap {
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
 }
 
+.main-nav {
+  width: 70%;
+}
+
+.main-nav ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
+}
+  .main-nav a {
+    font-size: 0.9rem;
+  }
+
+#Projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  #Projects h2 {
+  width: 100%;
+  }
+
+.card {
+  display: inline-block;
+  width: 47%;
+
+}
+
+.contact-wrap {
+  width: 60%;
+  margin-bottom: 50px;
+}
 .back-to-top a {
   display: none;
 }
+
+.main-footer {
+  padding-bottom: 8%;
+}
+
 .footer-nav {
   display: flex;
   align-items: center;
-  font-weight: bold;
   color: #111;
   font-size: .8em;
+}
+  .footer-nav a {
+  font-weight: 700;
 }
 }
 
 
 @media (min-width: 1024px) {
+
+
 }
