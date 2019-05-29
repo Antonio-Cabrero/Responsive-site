@@ -30,7 +30,7 @@ span {
 }
 
 p {
-  padding: 10px 0;
+  line-height: 1.5;
   color: #111;
   margin: 0 0 10px 0;
 }
@@ -124,7 +124,6 @@ footer {
   margin-top: 2.8em;
 }
   .profile-picture img {
-    width: 100%;
     display: block;
     border-radius: 15px;
     box-shadow: 0 5px 10px 1px #450019;
@@ -188,7 +187,25 @@ footer {
   border-radius: 5px;
   width: 100%;
   }
+  /* ---- Skills Section  ---- */
+  #Skills{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #870032;
+  }
+  #Skills h2 {
+    font-size: 1.6em;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 
+    #Skills p {
+      text-align: center;
+      color: #fff;
+    }
   /* ---- Contact Section  ---- */
 
 #Contact {
@@ -198,12 +215,12 @@ align-items: center;
 flex-direction: column;
 background-color: #870032;
 }
-    #Contact h2 {
-      font-size: 1.6em;
-      display: inline-block;
-      margin-top: 50px;
-      margin-bottom: 20px;
-    }
+  #Contact h2 {
+    font-size: 1.6em;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 
     #Contact p {
       text-align: center;
@@ -273,7 +290,6 @@ background-color: #870032;
     width: 100%;
     margin: 0 30px;
     justify-content: center;
-
   }
 
 .about-wrap {
@@ -299,6 +315,13 @@ background-color: #870032;
 .card {
   display: inline-block;
   width: 47%;
+}
+
+#Skills ul{
+  display: inline-flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
 }
 
 .contact-wrap {
