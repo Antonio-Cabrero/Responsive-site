@@ -252,6 +252,32 @@ background-color: #870032;
     font-size: 0.9rem;
   }
 
+#About {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.profile-picture {
+  width: 40%;
+  align-items: start;
+}
+  .profile-picture img{
+    width: 100%;
+    margin: 0 30px;
+    justify-content: center;
+
+  }
+
+.about-wrap {
+  display: inline-block;
+  width: 50%;
+  padding-bottom: 30px;
+
+}
+  .about-wrap p {
+    text-align: left;
+  }
+
 #Projects {
   display: flex;
   flex-wrap: wrap;
