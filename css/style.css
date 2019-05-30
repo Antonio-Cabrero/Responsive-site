@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap');
   /* =================================
     Base Element Styles
   ==================================== */
@@ -8,6 +8,11 @@
 body{
   color: #fff;
   line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
 h1,li {
@@ -107,7 +112,7 @@ footer {
 
     .about-wrap {
     width: 85%;
-    margin: 20px auto;
+    margin: 40px auto;
     }
       .about-wrap p {
       text-align: center;
@@ -373,6 +378,10 @@ background-color: #870032;
 
 #About {
   padding: 0 2%;
+}
+
+.profile-picture {
+  padding-bottom: 20px;
 }
 
 #Projects {
